@@ -5,7 +5,7 @@ const cors = require("cors");
 // Initialize app
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: 'https://your-frontend-url.onrender.com' }));
+app.use(cors({ origin: 'https://train-seat-booking-frontend1.onrender.com' }));
 
 // MongoDB Seat Schema
 const seatSchema = new mongoose.Schema({
