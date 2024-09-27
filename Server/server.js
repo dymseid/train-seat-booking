@@ -62,7 +62,7 @@ app.post("/api/book-seats", async (req, res) => {
 
 // Connect to MongoDB and start server
 mongoose
-  .connect("mongodb://localhost:27017/trainsbook", {
+  .connect("mongodb+srv://rajat:2rajat%40db@cluster-train.ebayd.mongodb.net/trainsbook", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
