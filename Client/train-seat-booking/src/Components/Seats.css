@@ -1,0 +1,43 @@
+/* src/components/Seats.css */
+
+.seats-container {
+    margin-top: 20px; /* Space above seats section */
+    padding: 20px; /* Padding inside the container */
+    background-color: #f9f9f9; /* Light gray background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  h2 {
+    color: #2e7d32; /* Dark green color for headings */
+    margin-bottom: 10px; /* Space below heading */
+  }
+  
+  .seats {
+    display: flex; /* Flexbox for rows */
+    flex-direction: column; /* Stack rows vertically */
+  }
+  
+  .seat-row {
+    margin: 10px 0; /* Space between rows */
+  }
+  
+  .seat {
+    display: inline-block; /* Inline block for seating */
+    padding: 10px; /* Padding for better touch area */
+    margin: 0 5px; /* Space between seats */
+    border-radius: 4px; /* Rounded corners for seats */
+    text-align: center; /* Center text in seats */
+    cursor: not-allowed; /* Change cursor for booked seats */
+  }
+  
+  .available {
+    background-color: #4caf50; /* Green for available seats */
+    color: white; /* White text color */
+  }
+  
+  .booked {
+    background-color: #f44336; /* Red for booked seats */
+    color: white; /* White text color */
+  }
+  

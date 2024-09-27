@@ -1,0 +1,86 @@
+/* src/App.css */
+
+/* General app styling */
+.App {
+  font-family: 'Arial', sans-serif; /* Clean font for readability */
+  background-color: #e8f5e9; /* Light green background for the entire app */
+  padding: 20px; /* Padding around the app */
+  min-height: 100vh; /* Full height of the viewport */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arrange children vertically */
+  align-items: center; /* Center align children */
+  justify-content: center; /* Center align children vertically */
+}
+
+/* Main heading style */
+h1 {
+  font-size: 36px; /* Larger font size for the main title */
+  color: #2e7d32; /* Dark green color for contrast */
+  margin-bottom: 40px; /* Space below the heading */
+  text-align: center; /* Center align heading */
+}
+
+/* Container for the components */
+.container {
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack components vertically */
+  align-items: center; /* Center align components */
+  width: 100%; /* Full width */
+  max-width: 800px; /* Limit maximum width for better readability */
+  margin: 0 auto; /* Center the container */
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 30px; /* Padding inside the container */
+}
+
+/* Button styling */
+button {
+  padding: 12px; /* Consistent padding */
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  font-size: 18px; /* Larger font size */
+  border: none; /* No border */
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+  margin-top: 10px; /* Space above button */
+}
+
+button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+}
+
+/* Booked Seats section */
+h3 {
+  margin-top: 30px; /* Space above booked seats */
+  font-size: 22px; /* Increased font size */
+  color: #2e7d32; /* Dark green color for headings */
+}
+
+p {
+  font-size: 18px; /* Increased font size */
+  color: #555; /* Lighter text for readability */
+}
+
+/* Error message */
+.error {
+  color: #d32f2f; /* Red color for errors */
+  margin-top: 10px; /* Space above error message */
+  font-size: 16px; /* Font size for error */
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px; /* Smaller font size for mobile */
+  }
+
+  .container {
+    padding: 20px; /* Reduce padding on mobile */
+  }
+
+  button {
+    font-size: 16px; /* Smaller font size for buttons */
+  }
+}
