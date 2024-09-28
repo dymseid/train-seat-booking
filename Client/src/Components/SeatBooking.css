@@ -1,108 +1,100 @@
-/* src/components/SeatBooking.css */
-
-/* Container for the booking form */
 .booking-container {
-    max-width: 500px; /* Increased width for better form layout */
-    margin: 40px auto; /* Centered with some margin from top */
-    padding: 30px; /* Increased padding for better spacing */
-    border: 1px solid #e0e0e0; /* Lighter border color */
-    border-radius: 10px; /* More rounded corners */
-    background-color: #ffffff; /* White background for cleanliness */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* More prominent shadow */
-    text-align: center; /* Centered text */
+    max-width: 500px; 
+    margin: 40px auto; 
+    padding: 30px; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 10px;
+    background-color: #ffffff; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
   }
   
-  /* Heading */
   h2 {
-    font-size: 26px; /* Increased font size */
-    color: #333; /* Dark text for better readability */
-    margin-bottom: 20px; /* Space below heading */
+    font-size: 26px; 
+    color: #333; 
+    margin-bottom: 20px; 
   }
   
-  /* Form styling */
   form {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Arrange items vertically */
-    align-items: stretch; /* Stretch items to fill the container */
+    display: flex; 
+    flex-direction: column; 
+    align-items: stretch; 
   }
   
-  /* Input label */
   label {
-    font-size: 18px; /* Larger font size for labels */
-    color: #666; /* Slightly lighter color for labels */
-    margin-bottom: 10px; /* Space below label */
-    text-align: left; /* Left align text for better readability */
+    font-size: 18px; 
+    color: #666; 
+    margin-bottom: 10px; 
+    text-align: left; 
   }
   
-  /* Number input */
   input[type="number"] {
-    width: 100%; /* Full width input */
-    padding: 12px; /* Increased padding */
-    font-size: 16px; /* Increased font size */
-    margin-bottom: 20px; /* Space below input */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 6px; /* Rounded corners */
-    box-sizing: border-box; /* Include padding in width calculation */
-    transition: border-color 0.3s; /* Smooth transition on focus */
+    width: 100%; 
+    padding: 12px; 
+    font-size: 16px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 6px; 
+    box-sizing: border-box; 
+    transition: border-color 0.3s; 
   }
   
   input[type="number"]:focus {
-    border-color: #4caf50; /* Change border color on focus */
-    outline: none; /* Remove outline */
+    border-color: #4caf50; 
+    outline: none; 
   }
   
-  /* Submit button */
   button {
-    padding: 12px; /* Consistent padding */
-    background-color: #4caf50; /* Green background */
-    color: white; /* White text */
-    font-size: 18px; /* Larger font size */
-    border: none; /* No border */
-    border-radius: 6px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor */
-    transition: background-color 0.3s; /* Smooth transition on hover */
-    margin-top: 10px; /* Space above button */
+    padding: 12px; 
+    background-color: #4caf50;
+    color: white; 
+    font-size: 18px;
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    margin-top: 10px;
   }
   
   button:hover {
-    background-color: #388e3c; /* Darker green on hover */
+    background-color: #388e3c; 
   }
   
-  /* Booked Seats section */
+ 
   h3 {
-    margin-top: 30px; /* Space above booked seats */
-    font-size: 22px; /* Increased font size */
-    color: #333; /* Dark text */
+    margin-top: 30px; 
+    font-size: 22px;
+    color: #333; 
   }
   
   p {
-    font-size: 18px; /* Increased font size */
-    color: #555; /* Lighter text for readability */
+    font-size: 18px;
+    color: #555; 
   }
   
-  /* Error message */
+
   .error {
-    color: #d32f2f; /* Red color for errors */
-    margin-top: 10px; /* Space above error message */
-    font-size: 16px; /* Font size for error */
+    color: #d32f2f; 
+    margin-top: 10px; 
+    font-size: 16px; 
   }
   
-  /* Adjustments for mobile responsiveness */
+  
   @media (max-width: 480px) {
     .booking-container {
-      padding: 20px; /* Reduce padding for small screens */
+      padding: 20px;
     }
   
     h2 {
-      font-size: 22px; /* Smaller font size for headings */
+      font-size: 22px; 
     }
   
     button {
-      font-size: 16px; /* Smaller font size for buttons */
+      font-size: 16px; 
     }
   
     input[type="number"] {
-      font-size: 16px; /* Consistent font size */
+      font-size: 16px; 
     }
   }
   

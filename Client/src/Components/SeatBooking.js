@@ -1,13 +1,12 @@
 
-// src/components/SeatBooking.js
 import React, { useState } from 'react';
 import axios from 'axios';
 import './SeatBooking.css';
 
 const SeatBooking = () => {
-  const [numSeats, setNumSeats] = useState(''); // State to hold the number of seats
-  const [bookedSeats, setBookedSeats] = useState([]); // State to hold booked seat numbers
-  const [error, setError] = useState(''); // State to hold any error messages
+  const [numSeats, setNumSeats] = useState(''); 
+  const [bookedSeats, setBookedSeats] = useState([]); 
+  const [error, setError] = useState(''); 
 
   // Handle seat booking submission
   const handleBooking = async (e) => {
@@ -16,7 +15,7 @@ const SeatBooking = () => {
     try {
       const response = await axios.post('https://train-seat-booking-backend.onrender.com/api/book-seats', { numSeats });
       setBookedSeats(response.data.bookedSeats);
-      setError(''); // Reset error
+      setError(''); 
     } catch (error) {
       setError('Booking failed: ' + error.response.data.message);
     }

@@ -9,9 +9,9 @@ app.use(cors({ origin: 'https://train-seat-booking-frontend1.onrender.com' }));
 
 // MongoDB Seat Schema
 const seatSchema = new mongoose.Schema({
-    rowNumber: { type: Number, required: true }, // Row number should be a required field
-    seats: { type: [Number], required: true }, // Array of available seat numbers
-    booked: { type: [Number], required: true }, // Array of booked seat numbers
+    rowNumber: { type: Number, required: true }, 
+    seats: { type: [Number], required: true }, 
+    booked: { type: [Number], required: true }, 
   });
   
 
@@ -24,11 +24,9 @@ app.get("/api/seats", async (req, res) => {
 });
 
 // Book seats
-// Example route for booking seats
 app.post("/api/book-seats", async (req, res) => {
   const { numSeats } = req.body;
 
-  // Mock seat data, this would normally be fetched from your database
   const rows = await Seat.find({});
 
   let bookedSeats = [];
@@ -39,17 +37,17 @@ app.post("/api/book-seats", async (req, res) => {
     ).length;
 
     if (availableSeats >= numSeats) {
-      // If enough seats are available in this row
+      
       bookedSeats = row.seats
         .filter((seat) => !row.booked.includes(seat))
         .slice(0, numSeats);
       row.booked.push(...bookedSeats);
-    //   console.log(row) // Mark these seats as booked
+   
       await Seat.updateOne(
         { 'rowNumber': row.rowNumber},
         { 'booked': row.booked }
       );
-      break; // Exit the loop once seats are booked
+      break; 
     }
   }
 
